@@ -100,7 +100,12 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-
+for (int i=0;i<arr.length;i++) {
+    if(arr[i]%2==0 && arr[i]!=0) {
+        getOnlyPositiveNumbers[i] = i+1;
+    }
+    System.out.println(getOnlyPositiveNumbers[i]);
+}
     }
 
     /**
