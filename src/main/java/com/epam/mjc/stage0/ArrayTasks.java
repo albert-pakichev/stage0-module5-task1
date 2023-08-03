@@ -6,14 +6,13 @@ package com.epam.mjc.stage0;
  * The usage of any additional packages (such as java.util.*) is forbidden.
  */
 public class ArrayTasks {
-
     /**
      * Return a String[] array that will list all the seasons of the year, starting with winter.
      */
     public String[] seasonsArray() {
         String[] seasons  = new String[] {"Winter", "Spring", "Summer", "Autumn"};
     }
-
+}
     /**
      * Generate an int[] array of consecutive positive integers
      * starting at 1 of the given length (length parameter > 0).
@@ -24,13 +23,14 @@ public class ArrayTasks {
      * length = 3  -> [1, 2, 3]
      * length = 5  -> [1, 2, 3, 4, 5]
      */
+
     public int[] generateNumbers(int length) {
     int[] array  = new int[length];
         for(int i=0;i<array.length;i++) {
             array[i] = i;
             System.out.print(array[i]);
         }
-    }
+}
 
     /**
      * Find the sum of all elements of the int[] array.
@@ -100,11 +100,12 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-for (int i=0;i<arr.length;i++) {
+int[] array  = new int[arr.length];
+        for (int i=0;i<arr.length;i++) {
     if(arr[i]%2==0 && arr[i]!=0) {
-        getOnlyPositiveNumbers[i] = i+1;
+        array[i] = i+1;
     }
-    System.out.println(getOnlyPositiveNumbers[i]);
+    System.out.println(array[i]);
 }
     }
 
