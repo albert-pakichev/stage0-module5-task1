@@ -8,6 +8,8 @@ public class FridgeAlgorithm {
     close();
 
     public void fridgeAlgorithm(Fridge fridge) {
-
+    open();
+    getMilk();
+    close();
     }
 }
