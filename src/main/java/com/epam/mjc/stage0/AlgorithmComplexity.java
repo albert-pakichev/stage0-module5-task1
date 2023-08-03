@@ -13,6 +13,13 @@ import com.epam.mjc.stage0.utils.Complexity;
  * Complexity.O_N_LOG_N     -> O(N * log N)
  * Complexity.O_1           -> O(1)
  * Complexity.O_N           -> O(N)
+  O_LOG_N,
+    O_N_2,
+    O_FACTORIAL_N,
+    O_2_N,
+    O_N_LOG_N,
+    O_1,
+    O_N
  */
 public class AlgorithmComplexity {
 
@@ -20,27 +27,27 @@ public class AlgorithmComplexity {
      * Return the linear search complexity if the element you are looking for is at the end of the array.
      */
     public Complexity badLinerSearch() {
-         return O_N;
+         return Complexity.O_N;
     }
 
     /**
      * Return the complexity of accessing an array element by index.
      */
     public Complexity arrayIndexItemAccess() {
-         return O_1;
+         return Complexity.O_1;
     }
 
     /**
      * Return the complexity of a binary search.
      */
     public Complexity binarySorting() {
-       return O_LOG_N;
+       return Complexity.O_LOG_N;
     }
 
     /**
      * Return the complexity of the twoCycleSorting algorithm.
      */
     public Complexity twoCycleSorting() {
-             return O_N_LOG_N; 
+             return Complexity.O_N_LOG_N; 
     }
 }
