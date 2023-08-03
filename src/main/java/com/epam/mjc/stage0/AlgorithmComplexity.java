@@ -13,13 +13,6 @@ import com.epam.mjc.stage0.utils.Complexity;
  * Complexity.O_N_LOG_N     -> O(N * log N)
  * Complexity.O_1           -> O(1)
  * Complexity.O_N           -> O(N)
-  O_LOG_N,
-    O_N_2,
-    O_FACTORIAL_N,
-    O_2_N,
-    O_N_LOG_N,
-    O_1,
-    O_N
  */
 public class AlgorithmComplexity {
 
