@@ -29,8 +29,8 @@ public class ArrayTasks {
     int[] array  = new int[length];
         for(int i=0;i<array.length;i++) {
             array[i] = i;
-            return array;
         }
+        return array;
 }
 
     /**
@@ -104,8 +104,8 @@ int[] array  = new int[arr.length];
     if(arr[i]%2==0 && arr[i]!=0) {
         array[i] = i+1;
     }
-    return array;
 }
+    return array;
     }
 
     /**
