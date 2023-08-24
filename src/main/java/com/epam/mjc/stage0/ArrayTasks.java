@@ -12,7 +12,7 @@ public class ArrayTasks {
     public String[] seasonsArray() {
         String[] seasons  = new String[] {"Winter", "Spring", "Summer", "Autumn"};
     }
-}
+
     /**
      * Generate an int[] array of consecutive positive integers
      * starting at 1 of the given length (length parameter > 0).
