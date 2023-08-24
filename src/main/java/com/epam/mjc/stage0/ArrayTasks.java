@@ -11,6 +11,7 @@ public class ArrayTasks {
      */
     public String[] seasonsArray() {
         String[] seasons  = new String[] {"Winter", "Spring", "Summer", "Autumn"};
+        return seasons;
     }
 
     /**
@@ -28,7 +29,7 @@ public class ArrayTasks {
     int[] array  = new int[length];
         for(int i=0;i<array.length;i++) {
             array[i] = i;
-            System.out.print(array[i]);
+            return array;
         }
 }
 
@@ -45,7 +46,7 @@ public class ArrayTasks {
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
         }
-        System.out.print(sum);
+        return sum;
     }
 
     /**
@@ -83,9 +84,7 @@ public class ArrayTasks {
        arr[n-i-1] = arr[i];
        arr[i] = temp;
    }
-   for(int i=0;i<arr.length;i++) {
-       System.out.print(arr[i]);
-   }
+   return arr;
     }
 
     /**
@@ -105,7 +104,7 @@ int[] array  = new int[arr.length];
     if(arr[i]%2==0 && arr[i]!=0) {
         array[i] = i+1;
     }
-    System.out.println(array[i]);
+    return array;
 }
     }
 
