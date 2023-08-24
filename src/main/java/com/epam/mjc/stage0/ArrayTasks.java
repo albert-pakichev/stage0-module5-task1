@@ -11,7 +11,7 @@ public class ArrayTasks {
      * Return a String[] array that will list all the seasons of the year, starting with winter.
      */
     public String[] seasonsArray() {
-
+String [] array = new String[] {"Winter","Spring","Summer","Autumn"};
     }
 
     /**
@@ -25,7 +25,11 @@ public class ArrayTasks {
      * length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
-
+        int[] arr = new int[length];
+        for(int i=0;i<length;i++) {
+            arr[i] = i+1;
+            System.out.print(arr[i]);
+        }
     }
 
     /**
@@ -37,9 +41,13 @@ public class ArrayTasks {
      * arr = [5, -3, -4] -> sum = -2
      */
     public int totalSum(int[] arr) {
-
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            {
+                sum = sum + arr[i];
+            }
     }
-
+    }
     /**
      * Return the index of the first occurrence of number in the arr array.
      * If there is no such element in the array, return -1.
@@ -50,7 +58,12 @@ public class ArrayTasks {
      * arr = [5, -3, -4],   number = 10    ->  -1
      */
     public int findIndexOfNumber(int[] arr, int number) {
-
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == number) {
+            return i;
+        }
+    }
+    return -1;
     }
 
     /**
@@ -63,7 +76,12 @@ public class ArrayTasks {
      * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-
+        int size = arr.length;
+        for (int i = 0; i < size / 2; i++) {
+            String temp = arr[i];
+            arr[i] = arr[size - 1 - i];
+            arr[size - 1 - i] = temp;
+        }
     }
 
     /**
@@ -78,7 +96,18 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-
+        int positive = 0;
+        int negative = 0;
+        for (int elem : arr) {
+            if (elem > 0) {
+                positive++;
+            } else if (elem < 0) negative++;
+        }
+        int[] positiveArr = new int[positive];
+        positive = 0;
+        for (int elem : arr) {
+            if (elem > 0) positiveArr[positive++] = elem;
+        }
     }
 
     /**
