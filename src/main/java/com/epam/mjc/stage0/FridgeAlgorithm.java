@@ -6,8 +6,8 @@ public class FridgeAlgorithm {
    
 
     public void fridgeAlgorithm(Fridge fridge) {
-    void open();
-    void getMilk();
-    void close();
+    fridge.open();
+    fridge.getMilk();
+    fridge.close();
     }
 }
